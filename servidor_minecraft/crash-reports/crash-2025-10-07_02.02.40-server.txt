@@ -1,0 +1,110 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  ReachFixPlugin (ReachFix-1.12.2-1.1.3.jar)
+  TFCore (twilightforest-1.12.2-3.13b.jar)
+  OpenModsCorePlugin (OpenModsLib-1.12.2-0.12.2.jar)
+  pymtech (PymTech-1.12.2-1.0.2.jar)
+  ObfuscatePlugin (obfuscate-0.4.2-1.12.2.jar)
+  LucraftCoreCoreMod (LucraftCore-1.12.2-2.4.17.jar)
+  CQRPlugin (Chocolate_Quest_Repoured-1.12.2-2.7.1B.jar)
+Contact their authors BEFORE contacting forge
+
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 10/7/25 2:02 AM
+Description: Exception in server tick loop
+
+Missing Mods:
+	unknown : need any: have missing
+
+net.minecraftforge.fml.common.MissingModsException: Mod bloodmagic (Blood Magic: Alchemical Wizardry) requires [guideapi]
+	at net.minecraftforge.fml.common.Loader.sortModList(Loader.java:266)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:572)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 6.8.0-1030-azure
+	Java Version: 1.8.0_462, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 1820799680 bytes (1736 MB) / 2566389760 bytes (2447 MB) up to 15271460864 bytes (14564 MB)
+	JVM Flags: 2 total; -Xms2G -Xmx16G
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 40 mods loaded, 40 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                  | Version           | Source                                                     | Signature                                |
+	|:----- |:------------------- |:----------------- |:---------------------------------------------------------- |:---------------------------------------- |
+	| L     | minecraft           | 1.12.2            | minecraft.jar                                              | None                                     |
+	| L     | mcp                 | 9.42              | minecraft.jar                                              | None                                     |
+	| L     | FML                 | 8.0.99.99         | forge-1.12.2-14.23.5.2860.jar                              | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| L     | forge               | 14.23.5.2860      | forge-1.12.2-14.23.5.2860.jar                              | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| L     | openmodscore        | 0.12.2            | minecraft.jar                                              | None                                     |
+	| L     | obfuscate           | 0.4.2             | minecraft.jar                                              | None                                     |
+	| L     | aquaculture         | 1.6.8             | Aquaculture-1.12.2-1.6.8.jar                               | None                                     |
+	| L     | artifacts           | 1.12.2-1.2.4      | artifacts-1.12.2-1.2.4.jar                                 | None                                     |
+	| L     | baddragonmod        | 1.12.2            | Bad Dragon Mod.jar                                         | None                                     |
+	| L     | baubles             | 1.5.2             | Baubles-1.12-1.5.2.jar                                     | None                                     |
+	| L     | bibliocraft         | 2.4.6             | BiblioCraft[v2.4.6][MC1.12.2].jar                          | None                                     |
+	| L     | bloodmagic          | 1.12.2-2.4.3-105  | BloodMagic-1.12.2-2.4.3-105.jar                            | None                                     |
+	| L     | botania             | r1.10-364         | Botania r1.10-364.4.jar                                    | None                                     |
+	| L     | cannibalism         | 5.6.10            | Cannibalism-5.6.10-1.12.2.jar                              | None                                     |
+	| L     | cqrepoured          | 2.7.1B            | Chocolate_Quest_Repoured-1.12.2-2.7.1B.jar                 | None                                     |
+	| L     | sexmod              | 1.1.0             | Fapcraft-Fazclaires-Nightclub-Edition-Mod-Forge-1.12.2.jar | None                                     |
+	| L     | fnafroblocks        | 2.5.3             | Fapcraft-Fazclaires-Nightclub-Edition-Mod-Forge-1.12.2.jar | None                                     |
+	| L     | fossil              | 8.0.5             | fossilsarcheology-8.0.6.jar                                | None                                     |
+	| L     | geckolib3           | 3.0.30            | geckolib-forge-1.12.2-3.0.31.jar                           | None                                     |
+	| L     | grimoireofgaia      | 1.7.2             | GrimoireOfGaia3-1.12.2-1.7.2.jar                           | None                                     |
+	| L     | huntersdream        | 1.1.3             | huntersdream-1.1.3.jar                                     | None                                     |
+	| L     | knapm               | 1.3.0             | Kidnap-Mod-Forge-1.12.2.jar                                | None                                     |
+	| L     | letyourfriendeating | 1.0.1-BETA        | LetYourFriendEating_1.0.1-BETA_1.12.2_Forge.jar            | None                                     |
+	| L     | lmmlcm              | 1.0               | LittleMaid-Loving-Crossover-Mod-[1.12.2]-1.2.2.jar         | None                                     |
+	| L     | lovely_robot        | 1.1.0             | lovely_robot-1.12.2-1.1.0.jar                              | None                                     |
+	| L     | lucraftcore         | 1.12.2-2.4.16     | LucraftCore-1.12.2-2.4.17.jar                              | None                                     |
+	| L     | magicmirror         | 1.0               | magicmirror 1.1 [1.12].jar                                 | None                                     |
+	| L     | mantle              | 1.12-1.3.3.55     | Mantle-1.12-1.3.3.55.jar                                   | None                                     |
+	| L     | naturescompass      | 1.8.5             | NaturesCompass-1.12.2-1.8.5.jar                            | None                                     |
+	| L     | netherbackport      | 1.0.0             | NetherUpdateBackport-1.12.2(1.0.1).jar                     | None                                     |
+	| L     | openblocks          | 1.8.1             | OpenBlocks-1.12.2-1.8.1.jar                                | None                                     |
+	| L     | openmods            | 0.12.2            | OpenModsLib-1.12.2-0.12.2.jar                              | None                                     |
+	| L     | pymtech             | 1.12.2-1.0.2      | PymTech-1.12.2-1.0.2.jar                                   | None                                     |
+	| L     | reachfix            | 1.1.3             | ReachFix-1.12.2-1.1.3.jar                                  | None                                     |
+	| L     | rustic              | 1.1.7             | rustic-1.1.7.jar                                           | None                                     |
+	| L     | taiga               | 1.12.2-1.3.3      | taiga-1.12.2-1.3.4.jar                                     | None                                     |
+	| L     | tconstruct          | 1.12.2-2.13.0.183 | TConstruct-1.12.2-2.13.0.183.jar                           | None                                     |
+	| L     | travelersbackpack   | 1.0.35            | TravelersBackpack-1.12.2-1.0.35.jar                        | None                                     |
+	| L     | twilightforest      | 3.13b             | twilightforest-1.12.2-3.13b.jar                            | None                                     |
+	| L     | llibrary            | 1.7.20            | llibrary-1.7.20-1.12.2.jar                                 | None                                     |
+
+	Loaded coremods (and transformers): 
+llibrary (llibrary-core-1.0.11-1.12.2.jar)
+  net.ilexiconn.llibrary.server.core.plugin.LLibraryTransformer
+  net.ilexiconn.llibrary.server.core.patcher.LLibraryRuntimePatcher
+ReachFixPlugin (ReachFix-1.12.2-1.1.3.jar)
+  meldexun.reachfix.asm.ReachFixClassTransformer
+TFCore (twilightforest-1.12.2-3.13b.jar)
+  
+OpenModsCorePlugin (OpenModsLib-1.12.2-0.12.2.jar)
+  openmods.core.OpenModsClassTransformer
+pymtech (PymTech-1.12.2-1.0.2.jar)
+  lucraft.mods.pymtech.core.PymTechClassTransformer
+ObfuscatePlugin (obfuscate-0.4.2-1.12.2.jar)
+  com.mrcrayfish.obfuscate.asm.ObfuscateTransformer
+LucraftCoreCoreMod (LucraftCore-1.12.2-2.4.17.jar)
+  lucraft.mods.lucraftcore.core.LCTransformer
+CQRPlugin (Chocolate_Quest_Repoured-1.12.2-2.7.1B.jar)
+  team.cqr.cqrepoured.asm.CQRClassTransformer
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
